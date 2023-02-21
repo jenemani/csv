@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- 
+    This is a reasonable starting point for the HTML in Sprint 1.
+    Feel free to modify this as you wish.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Echo</title>
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Tell the browser what to show if JavaScript/TypeScript is disabled. -->
+    <noscript>This example requires JavaScript to run.</noscript>
+    <!-- Prepare a region of the page to hold the entire REPL interface -->
+    <div class="repl">
+      <h2>CSV Command Line</h2>
+      <h4>Mode: <span id="mode">Brief</span></h4><span> Toggle view with "mode" command</span>
+      <hr>
+      <!-- Prepare a region of the page to hold the command history -->
+      <div class="repl-history" id="history" dataTestId="repl-history">
+      </div>
+      <hr>
+      <div class="repl-input">
+        <input type="text" placeholder="Enter Commands Here" autocomplete="off" class="repl-command-box" id="input" />
+        <button type="button" class="submit-button" id="Submit Button">Submit</button>
+      </div>
+    </div>
+    <!-- Prepare a region of the page to hold the command input box -->
+
+    <!-- Load the script! Note: the .js extension is because browsers don't use TypeScript
+    directly. Instead, the author of the site needs to compile the TypeScript to JavaScript. -->
+    <script type="module" src="../src/index.js"></script>
+  </body>
+</html>
